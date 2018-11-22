@@ -9,6 +9,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.env.Environment;
 
+
 @SpringBootApplication
 @EnableConfigurationProperties(MyConfig.class)
 public class Application {

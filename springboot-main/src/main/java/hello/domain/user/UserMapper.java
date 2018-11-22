@@ -8,7 +8,7 @@ import java.util.List;
 public interface UserMapper {
 
     @Select("select * from users")
-    @Results(id = "userResult",value = {@Result(property = "usernameA",column = "user_name",javaType = String.class)})
+    @Results(id = "userResult",value = {@Result(property = "username",column = "user_name",javaType = String.class)})
     List<User> queryAll();
 
 

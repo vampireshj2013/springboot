@@ -2,7 +2,7 @@ package hello.domain.user;
 
 public class User {
     private long id;
-    private String usernameA;
+    private String username;
 
     public long getId() {
         return id;
@@ -12,11 +12,11 @@ public class User {
         this.id = id;
     }
 
-    public String getUsernameA() {
-        return usernameA;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUsernameA(String usernameA) {
-        this.usernameA = usernameA;
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
