@@ -1,15 +1,15 @@
 package hello.domain.book;
 
-import hello.domain.user.User;
+import org.apache.ibatis.type.Alias;
 
 /**
  * @author hzwanghaijiang
  * @version 2018/11/22.
  */
+@Alias("Book")
 public class Book {
     private int id;
     private String bookName;
-    private User author;
     private float bookPrice;
 
     public int getId() {
@@ -26,14 +26,6 @@ public class Book {
 
     public void setBookName(String bookName) {
         this.bookName = bookName;
-    }
-
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
     }
 
     public float getBookPrice() {

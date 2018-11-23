@@ -13,3 +13,5 @@ logs
 .idea
 
 /bin/
+
+.DS_Store
