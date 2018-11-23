@@ -17,7 +17,21 @@
         <module>springboot-main</module>
         <module>mybatis-simple</module>
         <module>springboot-mybatis-plus</module>
+        <module>springboot-tk-mybatis</module>
     </modules>
 
     <name>springboot</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+    </dependencies>
 </project>
