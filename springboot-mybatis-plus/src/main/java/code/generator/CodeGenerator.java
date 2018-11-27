@@ -63,7 +63,7 @@ public class CodeGenerator {
         PackageConfig pc = new PackageConfig();
         String moduleName = scanner("模块名");
         pc.setModuleName(moduleName);
-        pc.setParent("hello.domain");
+        pc.setParent("com.domain");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -78,7 +78,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义生成文件名称
-                return projectPath + "/src/main/java/hello/domain/" + pc.getModuleName()
+                return projectPath + "/src/main/java/com/domain/" + pc.getModuleName()
                         + "/entity/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });

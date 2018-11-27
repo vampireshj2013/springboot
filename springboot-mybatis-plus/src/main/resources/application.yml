@@ -8,9 +8,9 @@ spring:
         password: wanghj123
         driver-class-name: com.mysql.jdbc.Driver
 mybatis:
-  mapper-locations: classpath:hello/domain/**/*.xml
+  mapper-locations: classpath:com/domain/**/*.xml
 mybatis-plus:
-  type-aliases-package: classpath:hello.domain
+  type-aliases-package: classpath:com.domain
   check-config-location: true
 ---
 spring:
