@@ -12,7 +12,7 @@ import static org.mockito.BDDMockito.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MyTests {
+public class MyMockTests {
 
 	@MockBean
 	private RemoteService remoteService;
