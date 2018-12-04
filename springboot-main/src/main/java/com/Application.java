@@ -22,6 +22,8 @@ public class Application {
         System.out.println(environment.getProperty("server.address1"));
         System.out.println(((MyConfig)ctx.getBean("myConfig")).getAddress1());
         System.out.println();
+        System.out.println(ctx.getBean("testConfig"));
+//        System.out.println(1/0);
 //        log.info("iterator all context bean");
 //        for (String name : ctx.getBeanDefinitionNames()) {
 //            log.info(String.format("%s:%s",name,ctx.getBean(name)));

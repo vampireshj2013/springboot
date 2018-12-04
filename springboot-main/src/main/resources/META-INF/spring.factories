@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationListener=\
+org.springframework.boot.context.ApplicationPidFileWriter,\
+org.springframework.boot.web.context.WebServerPortFileWriter
+org.springframework.boot.diagnostics.FailureAnalyzer=com.fail.handler.MyFailureAnalyzer
+org.springframework.boot.env.EnvironmentPostProcessor=com.env.custom.EnvironmentPostProcessorExample

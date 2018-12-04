@@ -1,5 +1,10 @@
 server:
     address1: 192.168.1.100
+    tomcat:
+      basedir: tomcat-log
+      accesslog:
+        enabled: true
+        pattern: "%t %a \"%r\" %s (%D ms)"
 #debug: true
 logging:
   file: spring.log
@@ -11,6 +16,20 @@ spring:
         driver-class-name: com.mysql.jdbc.Driver
 mybatis:
   mapper-locations: classpath:com/domain/**/*.xml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+info:
+  app:
+    encoding: UTF-8
+    java:
+      source: 1.8
+      target: 1.8
 ---
 spring:
     profiles: development
